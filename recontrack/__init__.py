@@ -1,1 +1,1 @@
-from .extractor import TrackingCodeExtractor
+from .extractor import TrackingCodeExtractor, TrackingCode
