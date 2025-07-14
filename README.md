@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ### Command-line Interface (CLI)
 
-After installation, use the `recontrack` command:
+After installation, use the `recontrack/cli.py` command:
 
 ```bash
 python3 recontrack/cli.py <url>
@@ -97,7 +97,7 @@ Use in the command line:
 recontrack <url>
 ```
 
-Import as a module.
+Or import as a module.
 
 ```python
 from recontrack import TrackingCodeExtractor
