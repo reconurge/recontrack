@@ -38,8 +38,6 @@ source recontrack-env/bin/activate
 pip install -r requirements.txt
 ```
 
-This installs the package in editable mode.
-
 ---
 
 ## Usage
@@ -91,6 +89,12 @@ Or install using python:
 
 ```bash
 pip install git+https://github.com/reconurge/recontrack.git
+```
+
+Use in the command line:
+
+```bash
+recontrack <url>
 ```
 
 Import as a module.
