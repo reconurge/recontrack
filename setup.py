@@ -12,7 +12,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "recontrack=scripts.cli:cli",
+            "recontrack=recontrack.cli:cli",
         ],
     },
     python_requires=">=3.6",
