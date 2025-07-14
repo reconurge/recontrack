@@ -35,7 +35,7 @@ source recontrack-env/bin/activate
 3. Install Recontrack locally (run this command in the project root where `setup.py` is located):
 
 ```bash
-pip install -e .
+pip install -r requirements.txt
 ```
 
 This installs the package in editable mode.
@@ -49,13 +49,13 @@ This installs the package in editable mode.
 After installation, use the `recontrack` command:
 
 ```bash
-recontrack <url>
+python3 recontrack/cli.py <url>
 ```
 
 Example:
 
 ```bash
-recontrack https://example.com
+python3 recontrack/cli.py https://example.com
 ```
 
 Sample output:
@@ -71,7 +71,7 @@ Found Tracking Codes:
 For help:
 
 ```bash
-recontrack -h
+python3 recontrack/cli.py -h
 ```
 
 ---
