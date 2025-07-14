@@ -1,0 +1,27 @@
+import argparse
+from recontrack import TrackingCodeExtractor
+
+def cli():
+    parser = argparse.ArgumentParser(description="Extract tracking codes from a website.")
+    parser.add_argument("url", help="URL of the website to analyze")
+    args = parser.parse_args()
+
+    extractor = TrackingCodeExtractor(args.url)
+    try:
+        print(f"🔗 Fetching content from: {args.url}")
+        extractor.fetch()
+        print(f"↪️ Final URL after redirects: {extractor.final_url}")
+        extractor.extract_codes()
+
+        results = extractor.get_results()
+        if results:
+            print("\n🔍 Found Tracking Codes:")
+            for tracking in results:
+                print(f" - {tracking.source}: {tracking.code}")
+        else:
+            print("\n✅ No tracking codes found.")
+    except RuntimeError as e:
+        print(f"❌ Error: {e}")
+
+if __name__ == "__main__":
+    cli()
