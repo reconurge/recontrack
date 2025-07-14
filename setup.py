@@ -4,7 +4,7 @@ setup(
     name="recontrack",
     version="0.1.0",
     description="CLI tool and library to extract tracking codes from websites",
-    author="Your Name",
+    author="EliottElek",
     packages=find_packages(),
     install_requires=[
         "requests",
