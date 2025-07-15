@@ -14,18 +14,18 @@ def cli():
 
     extractor = TrackingCodeExtractor(args.url)
     try:
-        print(f"🔗 Fetching content from: {args.url}")
+        print(f"Fetching content from: {args.url}")
         extractor.fetch()
-        print(f"↪️ Final URL after redirects: {extractor.final_url}")
+        print(f"Final URL after redirects: {extractor.final_url}")
         extractor.extract_codes()
 
         results = extractor.get_results()
         if results:
-            print("\n🔍 Found Tracking Codes:")
+            print("\nFound Tracking Codes:")
             for tracking in results:
                 print(f" - {tracking.source}: {tracking.code}")
         else:
-            print("\n✅ No tracking codes found.")
+            print("\nNo tracking codes found.")
     except RuntimeError as e:
         print(f"❌ Error: {e}")
 
