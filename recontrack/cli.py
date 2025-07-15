@@ -1,4 +1,10 @@
 import argparse
+import sys
+import os
+# Add parent directory to path when run as script
+if __name__ == "__main__":
+    sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+
 from recontrack import TrackingCodeExtractor
 
 def cli():
