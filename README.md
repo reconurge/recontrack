@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Command-line Interface (CLI)
+### Command-line interface (CLI)
 
 After installation, use the `recontrack/cli.py` command:
 
@@ -61,7 +61,7 @@ Sample output:
 ```
 Fetching content from: https://example.com
 Final URL after redirects: https://www.example.com
-Found Tracking Codes:
+Found tracking codes:
  - Google Analytics (UA): UA-12345678-1
  - Facebook Pixel: 123456789012345
 ```
@@ -74,7 +74,7 @@ python3 recontrack/cli.py -h
 
 ---
 
-### Python Module
+### Python module
 
 You can also use Recontrack programmatically:
 

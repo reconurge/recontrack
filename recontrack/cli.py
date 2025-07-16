@@ -21,7 +21,7 @@ def cli():
 
         results = extractor.get_results()
         if results:
-            print("\nFound Tracking Codes:")
+            print("\nFound tracking codes:")
             for tracking in results:
                 print(f" - {tracking.source}: {tracking.code}")
         else:
